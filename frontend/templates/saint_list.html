@@ -1,0 +1,12 @@
+<h2>Publishers</h2>
+<form action="." method="post">
+    {% csrf_token %}
+    {{ form }}
+    <input type="submit" value="Submit"/>
+</form>
+
+
+RESULT<br>
+{% if result %}
+    {{ result }}
+{% endif %}
